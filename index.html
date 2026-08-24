@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naturéa Botanicals | Plant-Based CBD Skincare</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500;600&family=Pinyon+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.0.0/css/flag-icons.min.css">
+</head>
+<body>
+    <div class="background-gradient"></div>
+    
+    <!-- Decorative Leaves -->
+    <svg class="deco-leaf deco-left" viewBox="0 0 100 200" preserveAspectRatio="none">
+        <path d="M-20,50 Q40,10 60,100 T-20,180 Z" fill="rgba(0,0,0,0.15)"/>
+        <path d="M-10,30 Q60,-10 80,120 T-10,200 Z" fill="rgba(0,0,0,0.1)"/>
+    </svg>
+    <svg class="deco-leaf deco-right" viewBox="0 0 100 200" preserveAspectRatio="none">
+        <path d="M120,50 Q60,10 40,100 T120,180 Z" fill="rgba(0,0,0,0.15)"/>
+        <path d="M110,30 Q40,-10 20,120 T110,200 Z" fill="rgba(0,0,0,0.1)"/>
+    </svg>
+
+    <header>
+        <nav class="container">
+            <div class="nav-links nav-left">
+                <a href="#about" data-i18n="nav.about">About Us</a>
+                <a href="#services" data-i18n="nav.services">Services</a>
+            </div>
+            
+            <a href="#" class="logo" aria-label="Naturéa Botanicals Home">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"></path>
+                    <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path>
+                    <path d="M13 12c-2.5 1.52-5 3.02-5.92 3-3.23-.64-5.08 3-5.08 3"></path>
+                </svg>
+                <div class="logo-text">NATURÉA<span>BOTANICALS</span></div>
+            </a>
+            
+            <div class="nav-links nav-right">
+                <a href="#products" data-i18n="nav.products">Products</a>
+                <a href="#gallery" data-i18n="nav.gallery">Gallery</a>
+                <div class="lang-dropdown-wrapper">
+                    <button class="lang-trigger" aria-haspopup="listbox" aria-expanded="false">
+                        <span class="fi fi-us flag-circle"></span>
+                        <span class="lang-text">EN</span>
+                        <svg class="chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+                    </button>
+                    <div class="lang-dropdown" role="listbox">
+                        <button class="lang-option selected" role="option" aria-selected="true" data-lang="EN" data-flag="us">
+                            <span class="fi fi-us flag-circle"></span> English
+                        </button>
+                        <button class="lang-option" role="option" aria-selected="false" data-lang="PT" data-flag="br">
+                            <span class="fi fi-br flag-circle"></span> Português
+                        </button>
+                        <button class="lang-option" role="option" aria-selected="false" data-lang="ES" data-flag="es">
+                            <span class="fi fi-es flag-circle"></span> Español
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="mobile-menu-btn" aria-label="Open Menu" aria-expanded="false">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="3" x2="21" y1="12" y2="12"/><line x1="3" x2="21" y1="6" y2="6"/><line x1="3" x2="21" y1="18" y2="18"/></svg>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenu" aria-hidden="true">
+        <div class="mobile-menu-content">
+            <button class="close-menu-btn" aria-label="Close Menu">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </button>
+            <nav class="mobile-nav-links">
+                <a href="#about" data-i18n="nav.about">About Us</a>
+                <a href="#services" data-i18n="nav.services">Services</a>
+                <a href="#products" data-i18n="nav.products">Products</a>
+                <a href="#gallery" data-i18n="nav.gallery">Gallery</a>
+            </nav>
+        </div>
+    </div>
+
+    <main>
+        <section id="about" class="split-section container reveal hero">
+            <div class="content-col">
+                <span class="eyebrow" data-i18n="hero.eyebrow">The Origin</span>
+                <div class="watermark-wrapper">
+                    <span class="watermark" aria-hidden="true" data-i18n="hero.watermark">Origin</span>
+                    <h1 data-i18n="hero.title">Nature's Power, Bottled for Your Skin</h1>
+                </div>
+                <p data-i18n="hero.body">We believe in nature's power to nurture. Our CBD skincare is crafted with clean, plant-based ingredients to bring balance, radiance, and everyday wellness to your skin. Discover the art of botanical alchemy.</p>
+                <a href="#products" class="btn btn-outline" data-i18n="hero.button">Discover More</a>
+            </div>
+            <div class="image-col">
+                <div class="image-wrapper blob-1 aspect-portrait">
+                    <img src="assets/images/hero-bottle-stone.jpg" alt="CBD facial serum bottle surrounded by eucalyptus leaves on natural stone" onload="this.classList.add('loaded')">
+                </div>
+            </div>
+        </section>
+
+        <section id="products" class="split-section mirrored container reveal">
+            <div class="image-col">
+                <div class="image-wrapper blob-2 aspect-portrait">
+                    <img src="assets/images/products-flatlay.jpg" alt="Flatlay of Naturéa Botanicals CBD skincare products including serum bottles and cream jars with lavender and eucalyptus" loading="lazy" onload="this.classList.add('loaded')">
+                </div>
+            </div>
+            <div class="content-col">
+                <span class="eyebrow" data-i18n="products.eyebrow">Our Collection</span>
+                <div class="watermark-wrapper">
+                    <span class="watermark" aria-hidden="true" data-i18n="products.watermark">Products</span>
+                    <h2 data-i18n="products.title">Our Products</h2>
+                </div>
+                <p data-i18n="products.body">Every formula is designed to support, hydrate, and restore your natural glow. Discover skincare rooted in purity and powered by hand-selected, cold-pressed botanicals for visible, lasting results.</p>
+                <a href="#gallery" class="btn btn-outline" data-i18n="products.button">Explore Products</a>
+            </div>
+        </section>
+
+        <section id="services" class="services-section container reveal">
+            <div class="watermark-wrapper center">
+                <span class="eyebrow" data-i18n="services.eyebrow">Spa Offerings</span>
+                <span class="watermark" aria-hidden="true" data-i18n="services.watermark">Services</span>
+                <h2 data-i18n="services.title">Our Services</h2>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-item">
+                    <div class="image-wrapper ring-wrapper aspect-square">
+                        <img src="assets/images/services-facial.jpg" alt="Woman receiving a rejuvenating facial treatment with Naturéa Botanicals cream" loading="lazy" onload="this.classList.add('loaded')">
+                    </div>
+                    <h3 data-i18n="services.facials">Facials</h3>
+                </div>
+                <div class="service-item">
+                    <div class="image-wrapper ring-wrapper aspect-square">
+                        <img src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?q=80&w=400&auto=format&fit=crop" alt="Relaxing body massage with oils" loading="lazy" onload="this.classList.add('loaded')">
+                    </div>
+                    <h3 data-i18n="services.massage">Body Massage</h3>
+                </div>
+                <div class="service-item">
+                    <div class="image-wrapper ring-wrapper aspect-square">
+                        <img src="assets/images/services-aromatherapy.jpg" alt="Aromatherapy setup with a dropper bottle, hot massage stones, incense smoke, and a glowing candle" loading="lazy" onload="this.classList.add('loaded')">
+                    </div>
+                    <h3 data-i18n="services.aromatherapy">Aromatherapy</h3>
+                </div>
+                <div class="service-item">
+                    <div class="image-wrapper ring-wrapper aspect-square">
+                        <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=400&auto=format&fit=crop" alt="Woman relaxing in a botanical wellness bath" loading="lazy" onload="this.classList.add('loaded')">
+                    </div>
+                    <h3 data-i18n="services.rituals">Wellness Rituals</h3>
+                </div>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="icon-wrapper">
+                        <!-- Leaf -->
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22c4-4 8-9 8-14a8 8 0 1 0-16 0c0 5 4 10 8 14z"></path>
+                            <path d="M12 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"></path>
+                        </svg>
+                    </div>
+                    <div class="feature-text">
+                        <h3 data-i18n="services.feat1_title">Natural & Safe</h3>
+                        <p data-i18n="services.feat1_body">Made with natural, non-toxic ingredients for all skin types.</p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-wrapper">
+                        <!-- Lotus/Face -->
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+                            <line x1="9" y1="9" x2="9.01" y2="9"></line>
+                            <line x1="15" y1="9" x2="15.01" y2="9"></line>
+                        </svg>
+                    </div>
+                    <div class="feature-text">
+                        <h3 data-i18n="services.feat2_title">Holistic Wellness</h3>
+                        <p data-i18n="services.feat2_body">Skincare and self-care rituals for body, mind & soul.</p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-wrapper">
+                        <!-- Spa Bowl -->
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"></path>
+                            <line x1="16" y1="8" x2="2" y2="22"></line>
+                            <line x1="17.5" y1="15" x2="9" y2="6.5"></line>
+                        </svg>
+                    </div>
+                    <div class="feature-text">
+                        <h3 data-i18n="services.feat3_title">Expert Care</h3>
+                        <p data-i18n="services.feat3_body">Experienced therapists dedicated to your glowing health.</p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-wrapper">
+                        <!-- Steam Bowl -->
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M2 12h20"></path>
+                            <path d="M12 2v20"></path>
+                            <path d="m4.93 4.93 14.14 14.14"></path>
+                            <path d="m19.07 4.93-14.14 14.14"></path>
+                        </svg>
+                    </div>
+                    <div class="feature-text">
+                        <h3 data-i18n="services.feat4_title">Relax & Recharge</h3>
+                        <p data-i18n="services.feat4_body">A calming space to unwind, refresh, and rejuvenate.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="gallery-section reveal">
+            <div class="container center-text">
+                <span class="eyebrow" data-i18n="gallery.eyebrow">Inside Naturéa</span>
+                <div class="watermark-wrapper center">
+                    <span class="watermark" aria-hidden="true" data-i18n="gallery.watermark">Gallery</span>
+                    <h2 data-i18n="gallery.title">Our World</h2>
+                </div>
+                <p class="gallery-intro" data-i18n="gallery.body">Step into a sanctuary of peace. Explore our botanical ingredients, soothing textures, and the calming ambiance of our spa.</p>
+            </div>
+            
+            <div class="carousel-container">
+                <div class="carousel-track-wrapper">
+                    <div class="carousel-track" id="carouselTrack">
+                        <!-- Slides -->
+                        <div class="carousel-slide">
+                            <div class="slide-content">
+                                <div class="image-wrapper blob-1">
+                                    <img src="assets/images/gallery-shelf.jpg" alt="Wooden shelf displaying Naturéa Botanicals skincare products in a sunlit spa room" loading="lazy" onload="this.classList.add('loaded')">
+                                </div>
+                                <div class="slide-caption blob-1"><h3 data-i18n="gallery.slide1">Sacred Stones</h3></div>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <div class="slide-content">
+                                <div class="image-wrapper blob-2">
+                                    <img src="assets/images/gallery-rituals.jpg" alt="Person arranging hot massage stones next to a glowing Naturéa Botanicals candle" loading="lazy" onload="this.classList.add('loaded')">
+                                </div>
+                                <div class="slide-caption blob-2"><h3 data-i18n="gallery.slide2">Hand-Poured Rituals</h3></div>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <div class="slide-content">
+                                <div class="image-wrapper blob-3">
+                                    <img src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?q=80&w=800&auto=format&fit=crop" alt="Therapist providing a soothing back massage" loading="lazy" onload="this.classList.add('loaded')">
+                                </div>
+                                <div class="slide-caption blob-3"><h3 data-i18n="gallery.slide3">Healing Touch</h3></div>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <div class="slide-content">
+                                <div class="image-wrapper blob-4">
+                                    <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=800&auto=format&fit=crop" alt="A relaxing herbal bath setup" loading="lazy" onload="this.classList.add('loaded')">
+                                </div>
+                                <div class="slide-caption blob-4"><h3 data-i18n="gallery.slide4">Botanical Baths</h3></div>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <div class="slide-content">
+                                <div class="image-wrapper blob-1">
+                                    <img src="https://images.unsplash.com/photo-1611145367651-6303b46e4040?q=80&w=800&auto=format&fit=crop" alt="Fresh green botanical ingredients and extracts" loading="lazy" onload="this.classList.add('loaded')">
+                                </div>
+                                <div class="slide-caption blob-1"><h3 data-i18n="gallery.slide5">Cold-Pressed Botanicals</h3></div>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <div class="slide-content">
+                                <div class="image-wrapper blob-2">
+                                    <img src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?q=80&w=800&auto=format&fit=crop" alt="Rich, whipped skincare cream texture" loading="lazy" onload="this.classList.add('loaded')">
+                                </div>
+                                <div class="slide-caption blob-2"><h3 data-i18n="gallery.slide6">Silken Textures</h3></div>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <div class="slide-content">
+                                <div class="image-wrapper blob-3">
+                                    <img src="assets/images/gallery-radiance.jpg" alt="Woman applying golden Naturéa Botanicals facial serum drops to her cheek" loading="lazy" onload="this.classList.add('loaded')">
+                                </div>
+                                <div class="slide-caption blob-3"><h3 data-i18n="gallery.slide7">Radiance Renewed</h3></div>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <div class="slide-content">
+                                <div class="image-wrapper blob-4">
+                                    <img src="https://images.unsplash.com/photo-1596755389378-c31d21fd1273?q=80&w=800&auto=format&fit=crop" alt="Lush indoor greenery and monstera leaves" loading="lazy" onload="this.classList.add('loaded')">
+                                </div>
+                                <div class="slide-caption blob-4"><h3 data-i18n="gallery.slide8">Living Spaces</h3></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="carousel-controls">
+                    <button class="carousel-btn prev-btn" aria-label="Previous slide">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+                    </button>
+                    <button class="carousel-btn next-btn" aria-label="Next slide">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                    </button>
+                </div>
+                
+                <div class="carousel-dots" id="carouselDots" role="tablist">
+                    <!-- Dots will be injected via JS -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-divider"></div>
+            <div class="footer-content">
+                <a href="#" class="logo" aria-label="Naturéa Botanicals Home">
+                    <div class="logo-text">NATURÉA<span>BOTANICALS</span></div>
+                </a>
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                    </a>
+                    <a href="#" aria-label="Facebook">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                    </a>
+                    <a href="#" aria-label="Twitter">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2026 Naturéa Botanicals. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
